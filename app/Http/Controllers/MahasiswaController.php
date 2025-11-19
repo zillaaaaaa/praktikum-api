@@ -35,7 +35,7 @@ class MahasiswaController extends Controller
         $mahasiswa = mahasiswa::create([
             "nama_mahasiswa" => $request->nama_mahasiswa,
             "nim_mahasiswa" => $request->nim_mahasiswa,
-            "fakultas_id" => $request->fakultas_id,
+            "fakultas_id" => $request->fakultas_id
         ]);
         return redirect()->route('mahasiswa.index');
 
